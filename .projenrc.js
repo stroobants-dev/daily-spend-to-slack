@@ -9,6 +9,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
   repositoryUrl: 'https://github.com/tom.stroobants/daily-spend-to-slack.git',
   keywords: ['awscdk', 'cdk', 'budget', 'spend', 'daily', 'slack', 'cost', 'finops'],
   workflowNodeVersion: '^14.17.0',
+  python: {
+    distName: 'cdk-daily-spend-to-slack',
+    module: 'cdk_daily_spend_to_slack',
+  },
   deps: [
     'aws-cdk-lib',
     'constructs',

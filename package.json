@@ -118,7 +118,12 @@
   "stability": "stable",
   "jsii": {
     "outdir": "dist",
-    "targets": {},
+    "targets": {
+      "python": {
+        "distName": "cdk-daily-spend-to-slack",
+        "module": "cdk_daily_spend_to_slack"
+      }
+    },
     "tsc": {
       "outDir": "lib",
       "rootDir": "src"
