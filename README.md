@@ -4,7 +4,7 @@ A construct that deploys a CloudWatch cronjob that will trigger a Lambda that wi
 
 Yes, that was a mouthful. But the general idea is that to create a FinOps/Cost optimization culture in your team, your team also needs to know what they are spending. That is why I created this. This construct will deliver the yesterday usage to your slack channel of choice. This can also be a private channel.
 
-![Example of Daily Spend Bot](images/slackexample.png)
+![Example of Daily Spend Bot](https://github.com/stroobants-dev/daily-spend-to-slack/raw/main/images/slackexample.png)
 
 ## Installation
 
@@ -42,7 +42,7 @@ new DailySpendToSlack(stack, 'DailySpendToSlack', {
 * `slackChannelName`: string - The name of the Slack channel (this will be used to generate the Configuration name)
 * `accountName`: string - You can give the bot a recognizable name, lowercase, max 30 and only `.-` allowed (could be more but that is what I tested)
 
-![your workspace](images/workspace-id.png)
+![your workspace](https://github.com/stroobants-dev/daily-spend-to-slack/blob/main/images/workspace-id.png)
 
 ## License
 

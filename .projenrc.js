@@ -6,7 +6,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   license: 'MPL-2.0',
   defaultReleaseBranch: 'main',
   name: 'daily-spend-to-slack',
-  repositoryUrl: 'https://github.com/tom.stroobants/daily-spend-to-slack.git',
+  repositoryUrl: 'https://github.com/stroobants-dev/daily-spend-to-slack.git',
   keywords: ['awscdk', 'cdk', 'budget', 'spend', 'daily', 'slack', 'cost', 'finops'],
   workflowNodeVersion: '^14.17.0',
   python: {
