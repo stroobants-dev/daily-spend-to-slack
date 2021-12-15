@@ -1,8 +1,8 @@
 {
-  "name": "daily-budget-to-slack",
+  "name": "daily-spend-to-slack",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tom.stroobants/daily-budget-to-slack.git"
+    "url": "https://github.com/tom.stroobants/daily-spend-to-slack.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -16,8 +16,6 @@
     "package": "npx projen package",
     "post-compile": "npx projen post-compile",
     "pre-compile": "npx projen pre-compile",
-    "publish:github": "npx projen publish:github",
-    "publish:npm": "npx projen publish:npm",
     "release": "npx projen release",
     "test": "npx projen test",
     "test:update": "npx projen test:update",
@@ -30,16 +28,14 @@
   },
   "author": {
     "name": "Tom Stroobants",
-    "email": "tom.stroobants@cloudar.be",
+    "email": "tom@stroobants.dev",
     "organization": false
   },
   "devDependencies": {
     "@types/jest": "*",
-    "@types/node": "^14.17.0",
+    "@types/node": "^12",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "aws-cdk-lib": "2.0.0",
-    "constructs": "10.0.5",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^2.5.0",
@@ -51,7 +47,7 @@
     "jsii-docgen": "^4.2.14",
     "jsii-pacmak": "^1.49.0",
     "json-schema": "^0.4.0",
-    "npm-check-updates": "^11",
+    "npm-check-updates": "^12",
     "projen": "^0.43.0",
     "standard-version": "^9",
     "ts-jest": "^27.1.1",
@@ -61,12 +57,23 @@
     "aws-cdk-lib": "^2.0.0",
     "constructs": "^10.0.5"
   },
+  "dependencies": {
+    "aws-cdk-lib": "^2.1.0",
+    "constructs": "^10.0.12"
+  },
   "bundledDependencies": [],
   "keywords": [
-    "cdk"
+    "awscdk",
+    "budget",
+    "cdk",
+    "cost",
+    "daily",
+    "finops",
+    "slack",
+    "spend"
   ],
   "main": "lib/index.js",
-  "license": "Apache-2.0",
+  "license": "MPL-2.0",
   "version": "0.0.0",
   "jest": {
     "testMatch": [

@@ -2,6 +2,7 @@
 !/.gitattributes
 !/.projen/tasks.json
 !/.projen/deps.json
+!/.projen/files.json
 !/.github/workflows/pull-request-lint.yml
 !/.github/workflows/stale.yml
 !/package.json
@@ -19,7 +20,6 @@ pids
 *.seed
 *.pid.lock
 lib-cov
-coverage
 *.lcov
 .nyc_output
 build/Release
@@ -49,4 +49,8 @@ junit.xml
 .jsii
 tsconfig.json
 !/API.md
+cdk.out
+cdk.context.json
+yarn-error.log
+coverage
 !/.github/workflows/upgrade-main.yml
